@@ -1,0 +1,424 @@
+/* ==========================================================================
+   CUSTOM ADVANCED STYLING - MIE TEK TEK AJO TAMPAN
+   Designed for High Fidelity Responsive Breakpoints (Mobile, Tablet, Monitor)
+   ========================================================================== */
+
+/* 1. VARIABLE SYSTEM DEFIINITION & ROOT CONFIGS */
+:root {
+    --primary-color: #E63946;       /* Crimson Red yang Mewah & Meningkatkan Nafsu Makan */
+    --accent-color: #FFB703;        /* Golden Amber Mewah untuk Highlight */
+    --dark-title: #1D3557;          /* Deep Luxury Navy untuk Kontras Tipografi */
+    --muted-body: #4A5568;          /* Slate Grey Kepatuhan Aksesibilitas Kontras Teks */
+    --light-bg: #F8F9FA;            /* Soft Off-White */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--muted-body);
+    background-color: #FFFFFF;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 2. PREMIUM ACCENT & UTILITIES */
+.heading-premium { font-family: var(--font-heading); font-weight: 800; }
+.heading-premium-section { font-family: var(--font-heading); }
+.text-primary-color { color: var(--primary-color) !important; }
+.text-accent { color: var(--accent-color) !important; }
+.bg-accent { background-color: var(--accent-color) !important; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-700 { font-weight: 700; }
+.font-weight-800 { font-weight: 800; }
+.tracking-wider { letter-spacing: 0.1em; }
+.bg-light-section { background-color: var(--light-bg); }
+.text-dark-title { color: var(--dark-title); }
+
+.accent-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+
+/* 3. APPBAR HEADER / NAVBAR STYLING */
+.padding-navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar-brand .brand-icon-box {
+    width: 42px;
+    height: 42px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navbar-brand:hover .brand-icon-box {
+    transform: rotate(-12deg) scale(1.08);
+}
+
+.navbar-brand .fire-icon {
+    color: #FFFFFF;
+    font-size: 1.35rem;
+}
+
+.navbar-brand .brand-text {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--dark-title);
+    letter-spacing: -0.5px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--muted-body);
+    padding: 0.5rem 1rem !important;
+    transition: all 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #C32F3A;
+    border-color: #C32F3A;
+    transform: translateY(-2px);
+}
+
+/* 4. BRAND NEW CAROUSEL LAYOUT: SOLUSI MASALAH ARROW BERHIMPITAN */
+.hero-carousel-section {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 550px;
+    background-color: #000000;
+}
+
+.carousel-overlay-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+/* Pola Gradasi Warna Mewah Pengganti File Gambar Fisik Agar Tetap Terlihat Keren */
+.bg-slide-1 { background-image: linear-gradient(135deg, #1d3557 0%, #e63946 100%); }
+.bg-slide-2 { background-image: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); }
+.bg-slide-3 { background-image: linear-gradient(135deg, #d35400 0%, #c0392b 100%); }
+
+.carousel-caption-custom {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* CRITICAL SAFE-ZONE BOUNDARY BOX */
+/* Box pembatas inilah yang menahan teks agar tidak menabrak batas luar panah navigasi */
+.content-bound {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}
+
+.text-white-80 {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.btn-outline-white-custom {
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-white-custom:hover {
+    background-color: #FFFFFF;
+    color: var(--dark-title) !important;
+    transform: translateY(-2px);
+}
+
+/* LEBAR TOMBOL PANAH DIKUNCI KHUSUS AGAR MENYEDIAKAN RUANG UNTUK PADDING TEKS */
+.custom-carousel-btn-layout {
+    width: 80px; 
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+.carousel-control-icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-carousel-btn-layout:hover .carousel-control-icon-circle {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+}
+
+/* 5. CARDS HOVER INTEGRATED MASHUP */
+.card-feature-hover {
+    transition: all 0.3s ease;
+    border-radius: 16px;
+}
+
+.card-feature-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(29, 53, 87, 0.08) !important;
+}
+
+.feature-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(230, 57, 70, 0.06);
+    border-radius: 12px;
+}
+/* ======================================================== */
+
+/* ==========================================
+   MENU UTAMA
+========================================== */
+
+.card-menu-premium{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+    transition:.35s ease;
+}
+
+.card-menu-premium:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+/* IMAGE */
+
+.menu-image-wrapper{
+    width:100%;
+    height:240px;
+    overflow:hidden;
+    background:#f4f4f4;
+}
+
+.menu-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:.5s ease;
+}
+
+.card-menu-premium:hover .menu-image{
+    transform:scale(1.08);
+}
+
+/* BODY */
+
+.card-menu-premium .card-body{
+    padding:24px;
+}
+
+/* PRICE */
+
+.price-menu{
+    color:var(--primary-color);
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+/* BADGE */
+
+.badge-best{
+    background:#FFF3CD;
+    color:#C27C00;
+    padding:8px 15px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.badge-recommend{
+    background:#D1FADF;
+    color:#027A48;
+    padding:8px 15px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.badge-hemat{
+    background:#FEE2E2;
+    color:#DC2626;
+    padding:8px 15px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.badge i{
+    margin-right:5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:992px){
+
+    .menu-image-wrapper{
+        height:220px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .menu-image-wrapper{
+        height:200px;
+    }
+
+    .card-menu-premium .card-body{
+        padding:20px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .menu-image-wrapper{
+        height:180px;
+    }
+
+    .price-menu{
+        font-size:1rem;
+    }
+
+}
+
+/* ======================================================== */
+
+/* 6. ADVANCED ACCORDION ACCENT LUXURY */
+.accordion-custom .accordion-item {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+.accordion-custom .accordion-button {
+    background-color: #FFFFFF;
+    color: var(--dark-title);
+    font-size: 1.05rem;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+    background-color: rgba(230, 57, 70, 0.02);
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* Mengubah indikator default panah accordion menjadi ikon premium Bootstrap */
+.accordion-custom .accordion-button::after {
+    font-family: 'bootstrap-icons';
+    content: "\F282"; 
+    background-image: none;
+    transform: none;
+    color: var(--muted-body);
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-custom .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+    color: var(--primary-color);
+}
+
+.border-top-light { border-top: 1px solid #F1F3F5; }
+
+/* 7. EXPERT FOOTER COMPONENTS */
+.footer-link-hover { transition: all 0.2s ease; display: inline-block; }
+.footer-link-hover:hover { color: var(--accent-color) !important; transform: translateX(4px); }
+.active-footer-link { color: var(--accent-color) !important; font-weight: 600; }
+
+.social-icon-hover {
+    width: 38px; height: 38px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon-hover:hover {
+    background-color: var(--primary-color);
+    color: #FFFFFF !important;
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   8. MEDIA QUERIES BREAKPOINTS CONTROL (BREAKPOINT BOOTSTRAP ADAPTIVE)
+   ========================================================================== */
+
+/* Laptop & Layar Sedang (LG / MD Breakpoints) */
+@media (max-width: 991.98px) {
+    .carousel-item { height: 70vh; }
+    .content-bound {
+        padding-left: 65px !important;
+        padding-right: 65px !important;
+    }
+    .display-3 { font-size: 2.5rem !important; }
+}
+
+/* Tablet Portrait & Layar Kecil (MD / SM Breakpoints) */
+@media (max-width: 767.98px) {
+    .carousel-item { height: 60vh; min-height: 480px; }
+    .content-bound {
+        padding-left: 55px !important;
+        padding-right: 55px !important;
+    }
+    .display-3 { font-size: 2rem !important; }
+    .lead { font-size: 1rem !important; }
+    .custom-carousel-btn-layout { width: 55px; }
+    .carousel-control-icon-circle { width: 38px; height: 38px; font-size: 1rem; }
+}
+
+/* Smartphone Layar Sentuh Ekstra Kecil (XS Breakpoint) */
+@media (max-width: 575.98px) {
+    .carousel-item { height: 55vh; min-height: 420px; }
+    .content-bound {
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+    }
+    .display-3 { font-size: 1.55rem !important; }
+    .lead { font-size: 0.85rem !important; }
+    .custom-carousel-btn-layout { width: 45px; }
+    .carousel-control-icon-circle { width: 32px; height: 32px; font-size: 0.8rem; }
+}

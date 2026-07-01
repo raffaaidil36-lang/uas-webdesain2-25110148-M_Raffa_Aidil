@@ -1,13 +1,443 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Mie Tek Tek Pekanbaru</title>
+    <title>Mie Tek Tek Ajo Tampan - Sensasi Kuliner Legendaris Modern</title>
+    
+    <meta name="description" content="Nikmati kelezatan Mie Tek Tek Ajo Tampan, kuliner tradisional dengan cita rasa mewah dan modern. Dibuat dengan resep rahasia bumbu rempah pilihan.">
+    <meta name="keywords" content="Mie Tek Tek, Ajo Tampan, Kuliner Pekanbaru, Mie Goreng, Mie Rebus, UMKM Makanan">
+    <meta name="author" content="Mie Tek Tek Ajo Tampan">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Menghubungkan ke File style.css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <a href="#main-content" class="visually-hidden-focusable">Lompat ke konten utama</a>
+
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light padding-navbar" aria-label="Navigasi Utama">
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Halaman Utama Mie Tek Tek Ajo Tampan">
+                    <div class="brand-icon-box me-2 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-fire fire-icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="brand-text">Ajo <span class="text-accent">Tampan</span></span>
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavNavbar" aria-controls="navbarNavNavbar" aria-expanded="false" aria-label="Tampilkan atau sembunyikan menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavNavbar">
+                    <ul class="navbar-nav align-items-lg-center gap-2 pt-3 pt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a href="#menu-pilihan" class="btn btn-primary-custom px-4 py-2 text-white shadow-sm rounded-pill font-weight-600">
+                                <i class="bi bi-cart3 me-2" aria-hidden="true"></i>Pesan Sekarang
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section class="hero-carousel-section" aria-label="Galeri Unggulan Mie Tek Tek">
+            <div id="heroCarouselAjo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarouselAjo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarouselAjo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarouselAjo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-overlay-bg bg-slide-1"></div>
+                        <div class="carousel-caption-custom">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-10 mx-auto text-center content-bound">
+                                        <span class="badge bg-accent text-dark mb-3 px-3 py-2 text-uppercase tracking-wider rounded-pill font-weight-700">Cita Rasa Legendaris</span>
+                                        <h1 class="display-3 text-white heading-premium mb-3">Mie Tek Tek Premium dengan Rempah Autentik</h1>
+                                        <p class="lead text-white-80 mb-4">Dibuat fresh setiap hari menggunakan resep legendaris Ajo Tampan yang diwariskan turun-temurun untuk memanjakan lidah Anda.</p>
+                                        <div class="d-flex flex-sm-row flex-column justify-content-center gap-3">
+                                            <a href="#menu-pilihan" class="btn btn-primary-custom btn-lg px-5 py-3 rounded-pill text-white font-weight-600 shadow-lg">Lihat Menu Utama</a>
+                                            <a href="#faq-section" class="btn btn-outline-white-custom btn-lg px-5 py-3 rounded-pill text-white font-weight-600">Pelajari FAQ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-overlay-bg bg-slide-2"></div>
+                        <div class="carousel-caption-custom">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-10 mx-auto text-center content-bound">
+                                        <span class="badge bg-accent text-dark mb-3 px-3 py-2 text-uppercase tracking-wider rounded-pill font-weight-700">Higienis & Berkualitas</span>
+                                        <h1 class="display-3 text-white heading-premium mb-3">Bahan Pilihan Terbaik, Kebersihan Bintang Lima</h1>
+                                        <p class="lead text-white-80 mb-4">Kami menjamin setiap piring Mie Tek Tek dimasak menggunakan bahan baku premium alami murni tanpa pengawet buatan.</p>
+                                        <div class="d-flex flex-sm-row flex-column justify-content-center gap-3">
+                                            <a href="#menu-pilihan" class="btn btn-primary-custom btn-lg px-5 py-3 rounded-pill text-white font-weight-600 shadow-lg">Pesan Sekarang</a>
+                                            <a href="about.html" class="btn btn-outline-white-custom btn-lg px-5 py-3 rounded-pill text-white font-weight-600">Cerita Kami</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-overlay-bg bg-slide-3"></div>
+                        <div class="carousel-caption-custom">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-10 mx-auto text-center content-bound">
+                                        <span class="badge bg-accent text-dark mb-3 px-3 py-2 text-uppercase tracking-wider rounded-pill font-weight-700">Promo Spesial</span>
+                                        <h1 class="display-3 text-white heading-premium mb-3">Mewah Rasanya, Nyaman di Kantong Keluarga</h1>
+                                        <p class="lead text-white-80 mb-4">Nikmati kelezatan premium bersama teman dan keluarga dengan berbagai paket combo hemat diskon khusus hari ini.</p>
+                                        <div class="d-flex flex-sm-row flex-column justify-content-center gap-3">
+                                            <a href="#menu-pilihan" class="btn btn-primary-custom btn-lg px-5 py-3 rounded-pill text-white font-weight-600 shadow-lg">Ambil Promo Hemat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev custom-carousel-btn-layout" type="button" data-bs-target="#heroCarouselAjo" data-bs-slide="prev">
+                    <span class="carousel-control-icon-circle" aria-hidden="true">
+                        <i class="bi bi-chevron-left"></i>
+                    </span>
+                    <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next custom-carousel-btn-layout" type="button" data-bs-target="#heroCarouselAjo" data-bs-slide="next">
+                    <span class="carousel-control-icon-circle" aria-hidden="true">
+                        <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span class="visually-hidden">Selanjutnya</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light-section">
+            <div class="container py-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm p-4 h-100 card-feature-hover">
+                            <div class="feature-icon-wrapper mb-3 text-primary-color">
+                                <i class="bi bi-award-fill fs-2" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h5 font-weight-700 text-dark-title mb-2">Bumbu Rempah Pilihan</h3>
+                            <p class="text-muted-body mb-0">Racikan rahasia 12 jenis rempah nusantara asli menghasilkan aroma gurih yang sangat memikat hati.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm p-4 h-100 card-feature-hover">
+                            <div class="feature-icon-wrapper mb-3 text-primary-color">
+                                <i class="bi bi-lightning-charge-fill fs-2" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h5 font-weight-700 text-dark-title mb-2">Penyajian Higienis</h3>
+                            <p class="text-muted-body mb-0">Dimasak langsung secara interaktif oleh tim terampil kami dengan standar sanitasi dapur tinggi.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-12">
+                        <div class="card border-0 shadow-sm p-4 h-100 card-feature-hover">
+                            <div class="feature-icon-wrapper mb-3 text-primary-color">
+                                <i class="bi bi-heart-fill fs-2" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="h5 font-weight-700 text-dark-title mb-2">Pelayanan Ramah</h3>
+                            <p class="text-muted-body mb-0">Komitmen memberikan pelayanan prima nan bersahabat demi kenyamanan kuliner berkelas Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu-pilihan" class="py-5 bg-white">
+            <div class="container py-4">
+
+                <div class="text-center mb-5">
+                    <span class="text-primary-color text-uppercase font-weight-700 tracking-wider small d-block mb-2">
+                        Menu Utama Unggulan
+                    </span>
+
+                    <h2 class="display-5 font-weight-800 text-dark-title heading-premium-section">
+                        Pilihan Rasa Terpukau & Mewah
+                    </h2>
+
+                    <div class="accent-line mx-auto"></div>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- CARD 1 -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="card card-menu-premium h-100 border-0 shadow-sm">
+
+                            <div class="menu-image-wrapper">
+                                <img src="img/mie_tektek_goreng.jpg"
+                                    alt="Mie Tek Tek Goreng Spesial"
+                                    class="menu-image">
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+
+                                    <h3 class="h5 fw-bold mb-0">
+                                        Mie Tek Tek Goreng Spesial
+                                    </h3>
+
+                                    <span class="price-menu">
+                                        Rp25.000
+                                    </span>
+
+                                </div>
+
+                                <p class="text-muted small">
+                                    Mie goreng khas Ajo Tampan menggunakan racikan
+                                    rempah pilihan dengan ayam suwir, telur,
+                                    sayuran segar dan kerupuk renyah.
+                                </p>
+
+                                <span class="badge badge-best">
+                                    <i class="bi bi-star-fill"></i>
+                                    Terlaris
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 2 -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <div class="card card-menu-premium h-100 border-0 shadow-sm">
+
+                            <div class="menu-image-wrapper">
+                                <img src="img/mie_tektek_kuah.jpg"
+                                    alt="Mie Tek Tek Kuah Nyemek"
+                                    class="menu-image">
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+
+                                    <h3 class="h5 fw-bold mb-0">
+                                        Mie Tek Tek Kuah Nyemek
+                                    </h3>
+
+                                    <span class="price-menu">
+                                        Rp26.000
+                                    </span>
+
+                                </div>
+
+                                <p class="text-muted small">
+                                    Mie dengan kuah nyemek gurih berpadu kaldu ayam,
+                                    telur orak-arik serta sayuran segar.
+                                </p>
+
+                                <span class="badge badge-recommend">
+                                    <i class="bi bi-fire"></i>
+                                    Rekomendasi
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 3 -->
+
+                    <div class="col-lg-4 col-md-6 mx-md-auto">
+
+                        <div class="card card-menu-premium h-100 border-0 shadow-sm">
+
+                            <div class="menu-image-wrapper">
+                                <img src="img/mie_goreng.jpg"
+                                    alt="Paket Combo Tampan"
+                                    class="menu-image">
+                            </div>
+
+                            <div class="card-body">
+
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+
+                                    <h3 class="h5 fw-bold mb-0">
+                                        Paket Combo Tampan
+                                    </h3>
+
+                                    <span class="price-menu">
+                                        Rp35.000
+                                    </span>
+
+                                </div>
+
+                                <p class="text-muted small">
+                                    1 Porsi Mie Tek Tek + Es Teh Jumbo +
+                                    Pangsit Goreng Premium dengan harga hemat.
+                                </p>
+
+                                <span class="badge badge-hemat">
+                                    <i class="bi bi-percent"></i>
+                                    Paling Hemat
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="faq-section" class="py-5 bg-light-section">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-primary-color text-uppercase font-weight-700 tracking-wider small d-block mb-2">Pertanyaan Umum</span>
+                    <h2 class="display-6 font-weight-800 text-dark-title heading-premium-section">Fakta & Info Seputar Sajian Kami</h2>
+                    <div class="accent-line mx-auto"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10 col-12">
+                        <div class="accordion accordion-custom shadow-sm" id="accordionFaqMie">
+                            
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button font-weight-700 text-dark-title py-3 px-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="bi bi-question-circle text-primary-color me-3 fs-5" aria-hidden="true"></i>
+                                        Apakah Mie Tek Tek Ajo Tampan menerima pesanan skala besar?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFaqMie">
+                                    <div class="accordion-body bg-white text-muted-body px-4 py-3 border-top-light">
+                                        Ya, kami melayani pemesanan katering dalam jumlah besar untuk berbagai macam kegiatan formal seperti arisan, pesta pernikahan, rapat kantor, maupun syukuran keluarga. Hubungi halaman <a href="kontak.html">Kontak</a> kami untuk info harga spesial.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed font-weight-700 text-dark-title py-3 px-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="bi bi-patch-check text-primary-color me-3 fs-5" aria-hidden="true"></i>
+                                        Apakah produk makanan yang dijual terjamin kehalalannya?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaqMie">
+                                    <div class="accordion-body bg-white text-muted-body px-4 py-3 border-top-light">
+                                        Seluruh menu olahan kuliner yang kami miliki 100% menggunakan bahan baku berlabel halal resmi, mulai dari daging ayam, komponen mi, hingga bumbu penyedap alami.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 rounded shadow-sm overflow-hidden">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed font-weight-700 text-dark-title py-3 px-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="bi bi-truck text-primary-color me-3 fs-5" aria-hidden="true"></i>
+                                        Bagaimana sistem pengiriman kurir/delivery online?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaqMie">
+                                    <div class="accordion-body bg-white text-muted-body px-4 py-3 border-top-light">
+                                        Sangat praktis! Selain bisa dipesan melalui link WhatsApp resmi di web ini, outlet fisik kami juga telah terintegrasi resmi di platform kurir online GoFood, GrabFood, dan ShopeeFood dengan pencarian kata kunci merchant: <strong>Mie Tek Tek Ajo Tampan</strong>.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-12">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="brand-icon-box bg-primary-color me-2 d-flex align-items-center justify-content-center rounded">
+                            <i class="bi bi-fire text-white" aria-hidden="true"></i>
+                        </div>
+                        <span class="fs-4 heading-premium text-white">Ajo <span class="text-primary-color">Tampan</span></span>
+                    </div>
+                    <p class="text-white-50 small mb-0 pe-lg-5">Membawa cita rasa warung kaki lima tradisional legendaris naik kelas ke tingkat kuliner premium modern demi kepuasan rasa bersantap Anda sekeluarga.</p>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <h4 class="h6 font-weight-700 text-white text-uppercase tracking-wider mb-3">Navigasi Cepat</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none footer-link-hover active-footer-link">Home / Beranda</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none footer-link-hover">About / Tentang Kami</a></li>
+                        <li><a href="produk.html" class="text-white-50 text-decoration-none footer-link-hover">Produk / Layanan</a></li>
+                        <li><a href="kontak.html" class="text-white-50 text-decoration-none footer-link-hover">Kontak Outlet</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <h4 class="h6 font-weight-700 text-white text-uppercase tracking-wider mb-3">Hubungi Kami</h4>
+                    <p class="text-white-50 small mb-2"><i class="bi bi-geo-alt-fill text-primary-color me-2" aria-hidden="true"></i> Jl. Panam Raya No. 45, Pekanbaru, Riau</p>
+                    <p class="text-white-50 small mb-2"><i class="bi bi-telephone-fill text-primary-color me-2" aria-hidden="true"></i> +62 812-3456-7890</p>
+                    <p class="text-white-50 small mb-0"><i class="bi bi-envelope-fill text-primary-color me-2" aria-hidden="true"></i> halo@ajotampan.com</p>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-start mb-3 mb-md-0">
+                    <p class="small text-white-50 mb-0">&copy; 2026 Mie Tek Tek Ajo Tampan. All Rights Reserved. Crafted for Academic Project.</p>
+                </div>
+                <div class="col-md-6 col-12 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white-50 fs-5 social-icon-hover" aria-label="Kunjungi Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50 fs-5 social-icon-hover" aria-label="Hubungi WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="text-white-50 fs-5 social-icon-hover" aria-label="Kunjungi TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
