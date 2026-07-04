@@ -1,13 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Mie Tek Tek Pekanbaru</title>
+    <title>Tentang Kami - Mie Tek Tek Ajo Tampan</title>
+    
+    <meta name="description" content="Ketahui sejarah, visi misi, dan profil dibalik kelezatan kuliner legendaris modern Mie Tek Tek Ajo Tampan Pekanbaru.">
+    <meta name="keywords" content="Sejarah Ajo Tampan, Visi Misi Mie Tek Tek, Pemilik Mie Tek Tek Ajo Tampan, UMKM Pekanbaru">
+    <meta name="author" content="Mie Tek Tek Ajo Tampan">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Menghubungkan ke File style.css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <a href="#main-content" class="visually-hidden-focusable">Lompat ke konten utama</a>
+
+    <!-- NAVBAR (Disini saya buat Konsisten dengan index.html) -->
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light padding-navbar" aria-label="Navigasi Utama">
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="Halaman Utama Mie Tek Tek Ajo Tampan">
+                    <div class="brand-icon-box me-2 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-fire fire-icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="brand-text">Ajo <span class="text-accent">Tampan</span></span>
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavNavbar" aria-controls="navbarNavNavbar" aria-expanded="false" aria-label="Tampilkan atau sembunyikan menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavNavbar">
+                    <ul class="navbar-nav align-items-lg-center gap-2 pt-3 pt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontak.html">Kontak</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a href="index.html#menu-pilihan" class="btn btn-primary-custom px-4 py-2 text-white shadow-sm rounded-pill font-weight-600">
+                                <i class="bi bi-cart3 me-2" aria-hidden="true"></i>Pesan Sekarang
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- HERO BANNER TENTANG KAMI -->
+        <section class="py-5 text-center position-relative overflow-hidden bg-slide-1 text-white d-flex align-items-center" style="min-height: 250px;">
+            <div class="container position-relative z-2">
+                <h1 class="display-4 heading-premium text-white mb-2">Cerita Tentang Kami</h1>
+                <p class="lead text-white-80 max-width-600 mx-auto">Mengenal lebih dekat warisan rasa, impian, dan sosok di balik kelezatan premium Mie Tek Tek Ajo Tampan.</p>
+            </div>
+        </section>
+
+        <!-- SEJARAH SINGKAT SECTION -->
+        <section class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="text-primary-color text-uppercase font-weight-700 tracking-wider small d-block mb-2">Sejarah Kami</span>
+                        <h2 class="display-6 font-weight-800 text-dark-title heading-premium mb-3">Berawal dari Gerobak Kayu Sederhana</h2>
+                        <div class="accent-line mb-4"></div>
+                        <p class="text-muted-body mb-3">
+                            Mie Tek Tek Ajo Tampan memulai perjalanannya dari sebuah niat tulus untuk menyajikan hidangan malam yang menghangatkan hati masyarakat Pekanbaru. Dengan resep bumbu halus 12 rempah rahasia keluarga, racikan mi kami langsung memikat lidah para pecinta kuliner sejak mangkuk pertama disajikan.
+                        </p>
+                        <p class="text-muted-body mb-4">
+                            Nama <strong>"Tek Tek"</strong> diambil dari ketukan khas wajan besi penanda kehadiran kami, sementara <strong>"Ajo Tampan"</strong> merupakan bentuk penghormatan pada budaya lokal yang dibalut dengan semangat pelayanan yang prima dan percaya diri. Kini, kami berevolusi menjadi UMKM modern tanpa menghilangkan cita rasa autentik tradisional.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Wrapper gambar menggunakan struktur penataan menu agar proporsional -->
+                        <div class="menu-image-wrapper rounded-4 shadow-md" style="height: 380px;">
+                            <img src="img/mie_tektek_goreng.jpg" alt="Suasana Dapur Tradisional Modern" class="menu-image w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISI MISI DYNAMIC TABS (JS FEATURE) -->
+        <section class="py-5 bg-light-section">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <span class="text-primary-color text-uppercase font-weight-700 tracking-wider small d-block mb-2">Landasan UMKM</span>
+                    <h2 class="display-6 font-weight-800 text-dark-title heading-premium-section">Visi, Misi & Filosofi</h2>
+                    <div class="accent-line mx-auto"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <!-- Navigation Pills / Tabs -->
+                        <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active px-4 py-2 rounded-pill font-weight-600 shadow-sm" id="pills-visi-tab" data-bs-toggle="pill" data-bs-target="#pills-visi" type="button" role="tab" aria-controls="pills-visi" aria-selected="true">
+                                    <i class="bi bi-eye-fill me-2"></i>Visi Kami
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-4 py-2 rounded-pill font-weight-600 shadow-sm" id="pills-misi-tab" data-bs-toggle="pill" data-bs-target="#pills-misi" type="button" role="tab" aria-controls="pills-misi" aria-selected="false">
+                                    <i class="bi bi-rocket-takeoff-fill me-2"></i>Misi Kami
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content Dynamic Area -->
+                        <div class="tab-content card border-0 shadow-sm p-4 rounded-4 bg-white" id="pills-tabContent">
+                            <!-- Visi -->
+                            <div class="tab-pane fade show active" id="pills-visi" role="tabpanel" aria-labelledby="pills-visi-tab">
+                                <h3 class="h4 font-weight-700 text-dark-title mb-3">Menjadi Pelopor Kuliner Kaki Lima Premium</h3>
+                                <p class="text-muted-body mb-0 lh-lg">
+                                    Menjadikan Mie Tek Tek Ajo Tampan sebagai brand kuliner tradisional terkemuka pilihan utama keluarga Indonesia, yang sukses menaikkan kelas makanan warung tradisional ke level premium dengan standarisasi kualitas higienis bintang lima namun tetap ekonomis.
+                                </p>
+                            </div>
+                            <!-- Misi -->
+                            <div class="tab-pane fade" id="pills-misi" role="tabpanel" aria-labelledby="pills-misi-tab">
+                                <h3 class="h4 font-weight-700 text-dark-title mb-3">Langkah Nyata Mewujudkan Kualitas</h3>
+                                <ul class="text-muted-body d-flex flex-column gap-2 ps-3 mb-0 lh-lg">
+                                    <li>Konsisten menggunakan 100% bumbu rempah alami pilihan Nusantara tanpa bahan pengawet buatan.</li>
+                                    <li>Menjaga standarisasi kebersihan dapur (sanitasi) yang ketat demi kepuasan dan kesehatan pelanggan.</li>
+                                    <li>Memberikan pelayanan terbaik yang ramah, cepat, dan responsif baik di outlet maupun layanan digital.</li>
+                                    <li>Mendukung pertumbuhan ekonomi daerah dengan menggunakan bahan baku segar langsung dari petani/pedagang lokal Pekanbaru.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFIL PEMILIK & MODAL INTEGRATION (JS FEATURE) -->
+        <section class="py-5 bg-white">
+            <div class="container py-4">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-6">
+                        <span class="text-primary-color text-uppercase font-weight-700 tracking-wider small d-block mb-2">Sosok Dibalik Rasa</span>
+                        <h2 class="display-6 font-weight-800 text-dark-title heading-premium mb-3">Profil Pemilik UMKM</h2>
+                        <div class="accent-line mb-4"></div>
+                        <h3 class="h5 font-weight-700 text-dark-title mb-1">Ajo Tampan & Tim Dapur</h3>
+                        <p class="text-muted small mb-3 text-uppercase tracking-wider text-primary-color font-weight-600">Founder & Kepala Racik</p>
+                        <p class="text-muted-body mb-4">
+                            Didirikan oleh pemuda lokal kreatif yang akrab disapa <strong>Ajo</strong>, beliau mendedikasikan waktu bertahun-tahun untuk mempelajari seni pengolahan mi tradisional. Dengan kecintaannya pada kuliner Indonesia, ia memadukan seni memasak wajan api besar (wajan besi tradisional) dengan inovasi sistem manajemen modern.
+                        </p>
+                        <!-- Trigger Button for Bootstrap Modal -->
+                        <button type="button" class="btn btn-primary-custom px-4 py-2 text-white shadow-sm rounded-pill font-weight-600" data-bs-toggle="modal" data-bs-target="#ownerBiographyModal">
+                            <i class="bi bi-file-earmark-person me-2"></i>Baca Cerita Lengkap Ajo
+                        </button>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <!-- Profil Avatar Wrapper -->
+                        <div class="position-relative d-inline-block">
+                            <div class="rounded-circle overflow-hidden shadow-sm bg-light-section border border-4 border-white mx-auto d-flex align-items-center justify-content-center" style="width: 280px; height: 280px;">
+                                <!-- Menggunakan icon chef premium sebagai representasi profil owner -->
+                                <i class="bi bi-person-bounding-box text-muted" style="font-size: 8rem;"></i>
+                            </div>
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x bg-accent px-4 py-1 text-dark rounded-pill shadow-sm font-weight-700 small">
+                                <i class="bi bi-patch-check-fill text-danger me-1"></i> Original Recipe Owner
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE MODAL COMPONENT (JS DISPLAY) -->
+        <div class="modal fade" id="ownerBiographyModal" tabindex="-1" aria-labelledby="ownerBiographyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 rounded-4 overflow-hidden shadow-lg">
+                    <div class="modal-header bg-dark text-white border-0 py-3">
+                        <h5 class="modal-title heading-premium font-weight-700" id="ownerBiographyModalLabel">
+                            <i class="bi bi-fire text-accent me-2"></i>Dedikasi Rasa Ajo Tampan
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-light-section p-4">
+                        <div class="text-center mb-3">
+                            <i class="bi bi-quote fs-1 text-primary-color opacity-50"></i>
+                        </div>
+                        <p class="text-muted-body lh-lg mb-3">
+                            "Bagi saya, memasak mi tek-tek bukan sekadar mencampur mi dengan bumbu kecap. Ini adalah sebuah pertunjukan seni, harmoni antara ketukan wajan besi, besarnya kobaran api, serta ketepatan waktu memasukkan rempah segar agar menghasilkan aroma 'smoky' yang gurih autentik."
+                        </p>
+                        <p class="text-muted-body lh-lg mb-0">
+                            UMKM ini dibangun atas komitmen kemandirian ekonomi pasca-pandemi, dengan harapan bisa membuka lapangan kerja seluas-luasnya untuk orang-orang yang berada di sekitar Pekanbaru. Terima kasih telah menjadi bagian dari perjalanan kuliner kami!
+                        </p>
+                    </div>
+                    <div class="modal-footer border-0 bg-white py-3">
+                        <button type="button" class="btn btn-secondary px-4 py-2 rounded-pill font-weight-600" data-bs-dismiss="modal">Tutup Cerita</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER (Disini saya buat Konsisten dengan index.html) -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-12">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="brand-icon-box bg-primary-color me-2 d-flex align-items-center justify-content-center rounded">
+                            <i class="bi bi-fire text-white" aria-hidden="true"></i>
+                        </div>
+                        <span class="fs-4 heading-premium text-white">Ajo <span class="text-primary-color">Tampan</span></span>
+                    </div>
+                    <p class="text-white-50 small mb-0 pe-lg-5">Membawa cita rasa warung kaki lima tradisional legendaris naik kelas ke tingkat kuliner premium modern demi kepuasan rasa bersantap Anda sekeluarga.</p>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <h4 class="h6 font-weight-700 text-white text-uppercase tracking-wider mb-3">Navigasi Cepat</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none footer-link-hover">Home / Beranda</a></li>
+                        <li><a href="about.html" class="text-white-50 text-decoration-none footer-link-hover active-footer-link">About / Tentang Kami</a></li>
+                        <li><a href="produk.html" class="text-white-50 text-decoration-none footer-link-hover">Produk / Layanan</a></li>
+                        <li><a href="kontak.html" class="text-white-50 text-decoration-none footer-link-hover">Kontak Outlet</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <h4 class="h6 font-weight-700 text-white text-uppercase tracking-wider mb-3">Hubungi Kami</h4>
+                    <p class="text-white-50 small mb-2"><i class="bi bi-geo-alt-fill text-primary-color me-2" aria-hidden="true"></i> Jl. Kereta Api, Tangkerang Tengah, Pekanbaru, Riau</p>
+                    <p class="text-white-50 small mb-2"><i class="bi bi-telephone-fill text-primary-color me-2" aria-hidden="true"></i> +62 812-3456-7890</p>
+                    <p class="text-white-50 small mb-0"><i class="bi bi-envelope-fill text-primary-color me-2" aria-hidden="true"></i> halo@ajotampan.com</p>
+                </div>
+            </div>
+            
+            <hr class="border-secondary my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12 text-center text-md-start mb-3 mb-md-0">
+                    <p class="small text-white-50 mb-0">&copy; 2026 Mie Tek Tek Ajo Tampan. All Rights Reserved. Crafted for Academic Project.</p>
+                </div>
+                <div class="col-md-6 col-12 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white-50 fs-5 social-icon-hover" aria-label="Kunjungi Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50 fs-5 social-icon-hover" aria-label="Hubungi WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="text-white-50 fs-5 social-icon-hover" aria-label="Kunjungi TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
