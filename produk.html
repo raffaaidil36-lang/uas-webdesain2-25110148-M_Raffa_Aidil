@@ -261,16 +261,62 @@
         <!-- INFORMASI TAMBAHAN LAYANAN -->
         <section class="py-5 bg-light-section">
             <div class="container py-3">
-                <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 bg-white text-center">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <i class="bi bi-info-circle text-primary-color display-5 mb-3 d-inline-block"></i>
-                            <h3 class="h4 text-dark-title font-weight-700 mb-3">Ingin Melakukan Kustomisasi Level Pedas?</h3>
-                            <p class="text-muted-body mb-4">Setiap produk makanan utama kami (Goreng & Nyemek) dapat disesuaikan tingkat kepedasannya secara gratis mulai dari Level 0 (Tidak Pedas) hingga Level 5 (Pedas Gila Ajo). Sampaikan preferensi Anda saat melakukan pemesanan.</p>
-                            <a href="kontak.html" class="btn btn-primary-custom px-5 py-3 text-white shadow-sm rounded-pill font-weight-600">
-                                <i class="bi bi-whatsapp me-2"></i>Hubungi Kontak Pesanan
-                            </a>
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-lg-5 bg-white">
+                    <div class="row align-items-center g-4">
+                        
+                        <div class="col-lg-5">
+                            <span class="text-primary-color text-uppercase font-weight-700 tracking-wider small d-block mb-2">Pesan Instan</span>
+                            <h3 class="h2 text-dark-title font-weight-800 mb-3">Estimasi Harga & Kirim Pesanan</h3>
+                            <p class="text-muted-body mb-4">Pilih menu favorit Anda, tentukan tingkat kepedasan gratis, dan hitung estimasi total harganya langsung di sini. Setelah selesai, kirim rincian pesanan langsung ke WhatsApp kami dengan satu kali klik saja!</p>
+                            
+                            <div class="p-3 bg-light-section rounded-3 border-start border-primary-color border-4">
+                                <span class="text-muted small d-block">Estimasi Total Pembayaran:</span>
+                                <h4 class="text-primary-color font-weight-800 mb-0" id="totalHarga">Rp0</h4>
+                            </div>
                         </div>
+
+                        <div class="col-lg-7">
+                            <div class="card border-0 bg-light p-4 rounded-4">
+                                <form id="calculatorForm">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="orderMenu" class="form-label font-weight-600 text-dark-title small">Pilih Menu Kuliner</label>
+                                            <select class="form-select border-0 px-3 py-2" id="orderMenu" style="border-radius: 10px;">
+                                                <option value="" selected disabled>-- Silakan Pilih Menu --</option>
+                                                <option value="mie-goreng">Mie Tek Tek Goreng (Rp25.000)</option>
+                                                <option value="mie-nyemek">Mie Tek Tek Nyemek (Rp26.000)</option>
+                                                <option value="es-teh">Es Teh Manis Jumbo (Rp6.000)</option>
+                                                <option value="combo-tampan">Paket Combo Tampan (Rp35.000)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="orderSpicy" class="form-label font-weight-600 text-dark-title small">Level Pedas</label>
+                                            <select class="form-select border-0 px-3 py-2" id="orderSpicy" style="border-radius: 10px;">
+                                                <option value="0">Level 0 (Tidak Pedas)</option>
+                                                <option value="1">Level 1 (Pedas Sedang)</option>
+                                                <option value="2">Level 2 (Pedas Normal)</option>
+                                                <option value="3" selected>Level 3 (Pedas Nikmat)</option>
+                                                <option value="4">Level 4 (Pedas Gurih)</option>
+                                                <option value="5">Level 5 (Pedas Gila Ajo)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label for="orderQty" class="form-label font-weight-600 text-dark-title small">Jumlah (Porsi/Gelas)</label>
+                                            <input type="number" class="form-control border-0 px-3 py-2" id="orderQty" min="1" value="1" style="border-radius: 10px;">
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <button type="button" class="btn btn-primary-custom w-100 py-3 text-white shadow-sm rounded-pill font-weight-600" id="btnKirimWA">
+                                                <i class="bi bi-whatsapp me-2"></i>Kirim Detail Pesanan ke WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -329,5 +375,8 @@
 
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link Penghubung ke File main.js -->
+    <script src="js/main.js"></script>
 </body>
 </html>
