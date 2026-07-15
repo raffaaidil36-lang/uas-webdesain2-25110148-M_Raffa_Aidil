@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 2. Map harga menu (sesuai dengan harga di halaman produk)
     const daftarHarga = {
-        "mie-goreng": 25000,
-        "mie-nyemek": 26000,
-        "es-teh": 6000,
-        "combo-tampan": 35000
+        "mie-goreng": 15000,
+        "mie-nyemek": 15000,
+        "es-teh": 5000,
+        "combo-tampan": 20000
     };
 
     // Fungsi untuk menghitung total harga secara real-time
