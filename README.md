@@ -4,7 +4,7 @@
 **NIM** : 25110148  
 **Matkul** : Web Desain 2 (MKK 123)  
 **UMKM** : Mie Tek Tek Ajo Tampan  
-**Lokasi** :  Jl. Kereta Api, Tangkerang Tengah, Kec. Marpoyan Damai, Kota Pekanbaru  
+**Lokasi** : Jl. Kereta Api, Tangkerang Tengah, Kec. Marpoyan Damai, Kota Pekanbaru  
 **Deskripsi** : Website Company Profile premium dan responsif untuk UMKM Mie Tek Tek Ajo Tampan. Proyek ini dirancang menggunakan kombinasi HTML5, Bootstrap 5, dan CSS3 kustom untuk memenuhi standar tugas akademik Web Desain 2.
 
 ---
@@ -20,16 +20,16 @@ Seluruh halaman web menggunakan satu basis tema desain yang konsisten melalui fi
 ## 🛠️ Struktur Halaman Web
 
 Proyek ini terdiri dari 4 halaman utama yang saling terintegrasi:
-1. **`index.html` (Home)**: Halaman beranda utama yang menyajikan impresi awal premium, *carousel* unggulan, fitur kelebihan UMKM, ringkasan menu terlaris, serta bagian FAQ (Pertanyaan Umum).
-2. **`about.html` (About)**: Halaman profil yang menceritakan sejarah berdirinya usaha dari gerobak kayu, landasan filosofi, visi misi, serta profil singkat sang pemilik (Ajo Tampan).
-3. **`produk.html` (Produk)**: Halaman katalog produk lengkap yang menampilkan varian makanan utama, minuman segar, hingga paket promo hemat.
-4. **`kontak.html` (Kontak)**: Halaman pusat bantuan yang berisi detail informasi operasional outlet, formulir pengiriman pesan, dan peta digital lokasi toko fisik.
+1. **`index.html` (Home)**: Halaman beranda utama yang menyajikan impresi awal premium, *carousel* unggulan, fitur keunggulan UMKM, ringkasan menu terlaris, serta bagian FAQ (Pertanyaan Umum) berbasis komponen *Accordion*.
+2. **`about.html` (About)**: Halaman profil yang menceritakan sejarah perkembangan usaha kuliner, landasan filosofi memasak pemilik yang dikemas interaktif menggunakan komponen *Modal*, serta penjabaran Visi dan Misi UMKM yang memanfaatkan fitur *Dynamic Tab/Pills*.
+3. **`produk.html` (Produk)**: Halaman katalog produk lengkap yang menampilkan varian makanan utama, minuman segar, hingga paket promo hemat. Halaman ini juga mengintegrasikan fitur *Dynamic Filter Tabs* dan fitur **Kalkulator Estimasi Belanja**.
+4. **`kontak.html` (Kontak)**: Halaman pusat bantuan yang berisi detail informasi operasional outlet, formulir pengiriman pesan dengan sistem validasi, dan peta digital lokasi toko fisik.
 
 ---
 
-## ⚡ Fitur-Fitur JavaScript Bootstrap 5 yang Diterapkan
+## ⚡ Fitur-Fitur JavaScript (Bootstrap 5 & Kustom `main.js`)
 
-Sesuai dengan capaian pembelajaran materi praktikum, website ini mengintegrasikan berbagai fitur interaktif bawaan JavaScript Bootstrap 5 tanpa memerlukan *library* pihak ketiga tambahan:
+Sesuai dengan capaian pembelajaran materi praktikum, website ini mengintegrasikan berbagai fitur interaktif berbasis JavaScript:
 
 *   **Bootstrap Carousel dengan Custom Control Box (`index.html`)**: Galeri gambar interaktif pada beranda yang bergeser otomatis secara halus (*fade effect*). Tombol navigasi panah dikunci dengan batas aman (*safe-zone boundary box*) agar teks promosi tidak menabrak tombol panah saat dibuka di layar HP kecil.
 *   **Bootstrap Accordion Component (`index.html`)**: Digunakan pada bagian FAQ untuk menyembunyikan dan menampilkan jawaban pertanyaan secara interaktif (buka-tutup) menggunakan ikon Bootstrap premium yang dinamis.
@@ -37,8 +37,9 @@ Sesuai dengan capaian pembelajaran materi praktikum, website ini mengintegrasika
     *   Pada halaman *About*, digunakan untuk berpindah informasi antara "Visi" dan "Misi" secara instan tanpa memuat ulang (*reload*) halaman.
     *   Pada halaman *Produk*, berfungsi sebagai **Sistem Filter Menu**. Pengguna dapat menyaring katalog kuliner berdasarkan kategori (Semua Menu, Makanan Utama, Minuman Segar, Paket Combo) secara interaktif.
 *   **Bootstrap Modal (`about.html`)**: Tombol interaktif "Baca Cerita Lengkap Ajo" yang memicu jendela *pop-up* (modal) elegan di tengah layar untuk menampilkan narasi filosofi memasak sang pemilik.
+*   **Kalkulator Estimasi Belanja & Generator Pesanan WhatsApp Kustom (`js/main.js` di `produk.html`)**: Fitur kustom menggunakan *Vanilla JS* untuk menghitung total harga pesanan secara *real-time* berdasarkan menu dan jumlah porsi yang dipilih pengguna. Fitur ini juga secara otomatis menyusun teks pesanan berformat rapi dan mengarahkannya langsung ke API WhatsApp resmi outlet.
 *   **Bootstrap Form Validation (`kontak.html`)**: Sistem validasi sisi klien (*client-side validation*) menggunakan kelas `.needs-validation`. Jika pengguna menekan tombol kirim sementara ada kolom formulir yang kosong, JavaScript akan mendeteksi dan memunculkan peringatan merah secara interaktif.
-*   **Responsive Google Maps Embed with Bootstrap Ratio (`kontak.html`)**: Peta digital terintegrasi menggunakan komponen `.ratio-21x9` bawaan Bootstrap, memastikan iFrame Google Maps melar dan mengecil secara otomatis dan proporsional di semua resolusi layar.
+*   **Responsive Google Maps Embed dengan Bootstrap Ratio (`kontak.html`)**: Peta digital terintegrasi menggunakan komponen `.ratio-21x9` bawaan Bootstrap, memastikan iFrame Google Maps melar dan mengecil secara otomatis dan proporsional di semua resolusi layar.
 
 ---
 
@@ -46,7 +47,7 @@ Sesuai dengan capaian pembelajaran materi praktikum, website ini mengintegrasika
 
 *   **HTML5** (Struktur semantik dan aksesibilitas)
 *   **CSS3** (Kustomisasi variabel root, efek hover kartu premium, tata letak grid, dan breakpoints kontrol)
+*   **JavaScript Kustom / Vanilla JS** (Manipulasi DOM, penanganan event, kalkulasi harga, dan integrasi WhatsApp API pada `js/main.js`)
 *   **Bootstrap v5.3.2** (Framework CSS, Sistem Grid, Komponen Utilitas, dan Bundel JavaScript + Popper)
 *   **Bootstrap Icons v1.11.2** (Ikonografi UI)
 *   **Google Fonts** (Font *Playfair Display* untuk heading mewah & *Plus Jakarta Sans* untuk teks tubuh yang scannable)
-*
